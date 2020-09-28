@@ -27,3 +27,5 @@ To reach a partial goal state where the first row is completed, another set of "
 ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20d_1%28t_4%2C%20t_5%29%20&plus;%20d_1%28t_4%2C%20g_4%29%20&plus;%20d_1%28t_5%2C%20g_5%29%20&plus;%20d_1%28t_0%2C%20t_4%29%20&plus;%20d_1%28t_0%2C%20t_5%29)
 
 Although I haven't fully determined the admissibility of these heuristics, they do work well. The cost is calculated by the distance between tiles 4 and 5, the distance they are from the goal state, and the distance they are from the blank tile. In other words, it costs more to move 4 away from 5, move away from (4,5),  and move (4,5) away from their goal states. 
+
+After the first row is completed, the process is essentially repeated until the puzzle is completely solved. For nearly all random states, this has been much less than 1s and returns a solution sequence of typically 300 actions to reach a goal state. 
