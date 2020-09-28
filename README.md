@@ -15,6 +15,8 @@ Once the first 3 tiles are lined up, the heuristics change a bit. In order for (
 | x | x | x | x | 4 |
 | x | x | x | x | 5 |
 | x | x | x | x | x |
+| x | x | x | x | x |
+
 
 |   |   |   |   |   |
 |---|---|---|---|---|
@@ -22,6 +24,8 @@ Once the first 3 tiles are lined up, the heuristics change a bit. In order for (
 | x | x | x | 5 | x |
 | x | x | x | 4 | x |
 | x | x | x | x | x |
+| x | x | x | x | x |
+
 
 To reach a partial goal state where the first row is completed, another set of "heuristics" are used:
 ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20d_1%28t_4%2C%20t_5%29%20&plus;%20d_1%28t_4%2C%20g_4%29%20&plus;%20d_1%28t_5%2C%20g_5%29%20&plus;%20d_1%28t_0%2C%20t_4%29%20&plus;%20d_1%28t_0%2C%20t_5%29)
